@@ -1,7 +1,6 @@
 import Link from 'next/link'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsPersonLinesFill } from 'react-icons/bs'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -34,7 +33,7 @@ const Footer = () => {
         <Link href="/resume">
           <div
             className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-            <BsPersonLinesFill />
+            <FaPhoneAlt />
           </div>
         </Link>
       </div>

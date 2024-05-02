@@ -7,6 +7,9 @@ import pythonImg from '/public/assets/images/skills/python.png'
 import nextjsImg from '/public/assets/images/skills/nextjs.png'
 import nodeImg from '/public/assets/images/skills/node.png'
 import javaImg from '/public/assets/images/skills/java.png'
+import figmaImg from '/public/assets/images/skills/figma.png'
+import arduinoImg from '/public/assets/images/skills/arduino.png'
+import golangImg from '/public/assets/images/skills/golang.png'
 import { list } from '../../@types'
 
 const skillsList = [
@@ -42,14 +45,26 @@ const skillsList = [
     ImgSrc: javaImg,
     technology: "java"
   },
+  {
+    ImgSrc: figmaImg,
+    technology: "figma"
+  },
+  {
+    ImgSrc: arduinoImg,
+    technology: "Arduino"
+  },
+  {
+    ImgSrc: golangImg,
+    technology: "GoLang"
+  }
 ]
 
 const Skills = () => {
   return (
-    <div className='w-full lg:h-screen p-2' id='skills'>
+    <div className='bg-[#F6971D] w-full lg:h-screen p-2' id='skills'>
       <div className='container mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>skills</p>
-        <h2 className='capitalize py-4'>o que eu posso fazer</h2>
+        <p className='text-xl tracking-widest uppercase text-white'>skills</p>
+        <h2 className='capitalize py-4'>O que podemos fazer</h2>
   
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           { skillsList.map(( skills: list, key: number ) => (

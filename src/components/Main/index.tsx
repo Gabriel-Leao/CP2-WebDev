@@ -1,15 +1,14 @@
 import { AiOutlineMail } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsPersonLinesFill } from 'react-icons/bs'
+import { FaGithub, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa'
 import Link from 'next/link'
 
 const Main = () => {
   return (
-    <div id='home' className='w-full h-screen text-center'>
+    <div id='home' className='w-full h-screen text-center bg-[#000024]'>
       <div className='container w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
-          <h1 className='py-4 text-gray-700'>
-            Olá, somos a <span className='text-[#5651e5]'>RealTech</span>
+          <h1 className='py-4 text-gray-500'>
+            Olá, somos a <span className='text-[#40CBF6]'>RealTech</span>
           </h1>
 
           <h2 className='py-2 text-gray-700 capitalize'>
@@ -20,20 +19,20 @@ const Main = () => {
 
 
             <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-[#000010] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#F6971D] text-white'>
                 <FaGithub />
               </div>
             </a>
 
             <Link href="/#contact">
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-[#000010] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#F6971D] text-white'>
                 <AiOutlineMail />
               </div>
             </Link>
 
             <Link href="/resume">
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <BsPersonLinesFill />
+              <div className='rounded-full shadow-lg shadow-[#000010] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#F6971D] text-white'>
+                <FaPhoneAlt />
               </div>
             </Link>
           </div>

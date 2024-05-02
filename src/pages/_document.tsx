@@ -4,10 +4,10 @@ const Document = () => {
   return (
     <Html lang='pt-BR'>
       <Head>
-        <title>Gabriel Leão da Silva</title>
-        <meta name="description" content="Gabriel Leão da Silva, portfolio" />
-        <meta name="author" content="Gabriel Leão da Silva" />
-        <meta name="keywords" content="Gabriel Leão, Gabriel Leao, gabriel" />
+        <title>RealTech</title>
+        <meta name="description" content="RealTech, portfolio" />
+        <meta name="author" content="RealTech" />
+        <meta name="keywords" content="RealTech" />
         <link rel="icon" href="/assets/images/foto-perfil.png" />
       </Head>
       <body>

@@ -9,22 +9,22 @@ const About = () => {
         <div className="col-span-2 text-justify">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">sobre</p>
 
-          <h2 className="py-4 capitalize">quem sou eu</h2>
+          <h2 className="py-4 capitalize">quem somos nós</h2>
 
-          <p className="py-2 text-gray-600">Eu não sou seu desenvolvedor comum</p>
+          <p className="py-2 text-gray-600">Não somos uma equipe comum</p>
 
           <p className="py-2 text-gray-600">
-            Sou uma pessoa tranquila e introvertida que gosta muito de Livros, Video Games e Rock N Roll. Já fui estagiário na Caixa Econômica Federal, foi a minha primeira experiência profissional e onde pude aprender muito sobre o funcionamento da organização, Hierarquia, pontualidade e também no trato com as pessoas, mas hoje pretendo ser um programador Web.
+          Somos a Real Tech, uma empresa composta por cinco profissionais com um objetivo em comum, desenvolver soluções criativas para problemas reais.
           </p>
 
           <p className="py-2 text-gray-600">
-            Fui aluno no Instituto Proa, fiz o curso PROPROFISSÃO que durante 4 meses desenvolve as competências técnicas e comportamentais essenciais para desenvolvedores.
-            Durante ele pude aprender: Comunicação assertiva, HTML, CSS, Javascript, React, Banco de Dados, Java.
-            Essas competências foram desenvolvidas por meio de trabalhos em grupos, projetos e atividades.
+          A equipe se uniu ainda quando estavam na faculdade. À partir de uma amizade, surgiu a ideia de fundar a empresa.
+
+          Durante a nossa jornada como grupo nos deparamos diversas vezes com desafios que pareciam impossíveis, mas sempre superados fazendo uso da inovação e tecnologia.
           </p>
 
           <Link href="/#projects">
-            <p className="py-2 text-gray-600 underline cursor-pointer">Veja alguns dos meus últimos projetos.</p>
+            <p className="py-2 text-gray-600 underline cursor-pointer">Conheça nossos projetos.</p>
           </Link>
         </div>
 

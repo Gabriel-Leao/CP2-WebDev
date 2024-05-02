@@ -13,15 +13,11 @@ const Main = () => {
           </h1>
 
           <h2 className='py-2 text-gray-700 capitalize'>
-          Desafios são oportunidades para inovar
+             Desafios são oportunidades para inovar
           </h2>
 
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer" aria-label='Linkedin'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <FaLinkedinIn />
-              </div>
-            </a>
+
 
             <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>

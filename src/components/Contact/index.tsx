@@ -53,7 +53,7 @@ const Contact = () => {
 
         <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 bg-white'>
           <div className='p-4'>
-            <form action='https://getform.io/f/6b9a7436-40d0-4df5-9e8b-33d63f60c48a' method='POST'>
+            <form action='https://getform.io/f/rbeqoqeb' method='POST'>
               <div className='md:grid md:grid-cols-2 gap-4 py-2 w-full'>
 
                 <div className='flex flex-col'>

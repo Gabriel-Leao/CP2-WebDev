@@ -16,9 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router === '/rick-morty' ||
-      router === '/netflix' ||
-      router === '/cep'
+      router === '/mededuca'
     ) {
       setNavbg('transparent')
       setNavcolor('#ecf0f3')
@@ -39,9 +37,7 @@ const Navbar = () => {
         setShadow(false)
         setNavbg('transparent')
         if (
-          router === '/rick-morty' ||
-          router === '/netflix' ||
-          router === '/cep'
+          router === '/mededuca'
         ) setNavcolor('#ecf0f3')
         else setNavcolor('#fff')
       }
@@ -63,7 +59,7 @@ const Navbar = () => {
       ? 'fixed w-full shadow-xl z-[100]' 
       : 'fixed w-full z-[100]'}
     >
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 py-2'>
+      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 py-2 py-2'>
         <Link href='/'>
           <Image src={logoImg} alt="/" width='80' height='80' className='cursor-pointer rounded-full ml-1' />
         </Link>

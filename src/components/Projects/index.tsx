@@ -1,28 +1,14 @@
-import rickMortyImg from '/public/assets/images/projects/rick-morty.png'
-import cepImg from '/public/assets/images/projects/cep.png'
-import netflixImg from '/public/assets/images/projects/netflix.jpg'
+import mededucaImg from '/public/assets/images/projects/home.png'
 import ProjectItem from '../ProjectItem'
 import { projectItem } from '../../@types'
 
 const projectList = [
   {
-    imgSrc: rickMortyImg,
-    title: "Squanchy",
-    subTitle: "react js",
-    link: "/rick-morty"
+    imgSrc: mededucaImg,
+    title: "MedEduca",
+    subTitle: "Next.Js",
+    link: "/mededuca"
   },
-  {
-    imgSrc: cepImg,
-    title: "busca cep",
-    subTitle: "react js",
-    link: "/cep"
-  },
-  {
-    imgSrc: netflixImg,
-    title: "netflix",
-    subTitle: "react js",
-    link: "/netflix"
-  }
 ]
 
 const Projects = () => {

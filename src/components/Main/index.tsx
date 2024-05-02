@@ -18,7 +18,7 @@ const Main = () => {
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
 
 
-            <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
+            <a href="https://github.com/Projeto-Dev-Aula" rel="noreferrer" target="_blank" aria-label='Github'>
               <div className='rounded-full shadow-lg shadow-[#000010] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#F6971D] text-white'>
                 <FaGithub />
               </div>
@@ -30,11 +30,11 @@ const Main = () => {
               </div>
             </Link>
 
-            <Link href="/resume">
+            <a href='tel:+55110028922' target="_blank" rel="noreferrer">
               <div className='rounded-full shadow-lg shadow-[#000010] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#F6971D] text-white'>
                 <FaPhoneAlt />
               </div>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

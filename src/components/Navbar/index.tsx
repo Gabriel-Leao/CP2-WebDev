@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaPhoneAlt } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
 import logoImg from '/public/assets/images/foto-perfil.png'
@@ -10,21 +10,9 @@ import logoImg from '/public/assets/images/foto-perfil.png'
 const Navbar = () => {
   const [nav, setnav] = useState(false)
   const [shadow, setShadow] = useState(false)
-  const [navbg, setNavbg] = useState('#ecf0f3')
-  const [navcolor, setNavcolor] = useState('#1f2937')
+  const [navbg, setNavbg] = useState('transparent')
+  const [navcolor, setNavcolor] = useState('#ecf0f3')
   const router = useRouter().asPath
-
-  useEffect(() => {
-    if (
-      router === '/mededuca'
-    ) {
-      setNavbg('transparent')
-      setNavcolor('#ecf0f3')
-    } else {
-      setNavbg('#ecf0f3')
-      setNavcolor('#1f2937')
-    }
-  }, [router])
 
   useEffect(() => {
     const handleShadow = () => {
@@ -36,10 +24,7 @@ const Navbar = () => {
       else {
         setShadow(false)
         setNavbg('transparent')
-        if (
-          router === '/mededuca'
-        ) setNavcolor('#ecf0f3')
-        else setNavcolor('#fff')
+        setNavcolor('#ecf0f3')
       }
     }
 
@@ -59,7 +44,7 @@ const Navbar = () => {
       ? 'fixed w-full shadow-xl z-[100]' 
       : 'fixed w-full z-[100]'}
     >
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 py-2 py-2'>
+      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 py-2'>
         <Link href='/'>
           <Image src={logoImg} alt="/" width='80' height='80' className='cursor-pointer rounded-full ml-1' />
         </Link>
@@ -141,29 +126,26 @@ const Navbar = () => {
               <p className='uppercase tracking-widest text-[#5651e5]'>vamos nos conectar</p>
 
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer" aria-label='Linkedin'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaLinkedinIn />
-                  </div>
-                </a>
-
-                <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <a href="https://github.com/Projeto-Dev-Aula" rel="noreferrer" target="_blank" aria-label='Github'>
+                  <div
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaGithub />
                   </div>
                 </a>
 
                 <Link href="/#contact">
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <AiOutlineMail />
                   </div>
                 </Link>
 
-                <Link href="/resume">
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <BsPersonLinesFill />
+                <a href='tel:+55110028922' target="_blank" rel="noreferrer">
+                  <div
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaPhoneAlt />
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

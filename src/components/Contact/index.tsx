@@ -29,7 +29,7 @@ const Contact = () => {
               <p className='pt-8 text-center lg:text-left uppercase text-[#5651e5]'>conecte-se conosco</p>
 
               <div className='flex items-center justify-between py-4'>
-                <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
+                <a href="https://github.com/Projeto-Dev-Aula" rel="noreferrer" target="_blank" aria-label='Github'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <FaGithub />
                   </div>
@@ -41,19 +41,20 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <Link href="/resume">
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <a href="tel:+55110028922" target="_blank" rel="noreferrer">
+                  <div
+                    className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaPhoneAlt />
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 bg-white'>
-          <div className='p-4'>
-            <form action='https://getform.io/f/rbeqoqeb' method='POST'>
+        <div className="col-span-3 w-full mt-8 md:mt-0 h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 bg-white">
+          <div className="p-4">
+            <form action="https://getform.io/f/rbeqoqeb" method='POST'>
               <div className='md:grid md:grid-cols-2 gap-4 py-2 w-full'>
 
                 <div className='flex flex-col'>
@@ -78,7 +79,7 @@ const Contact = () => {
               </div>
 
               <div className='flex flex-col py-2'>
-                <label className='uppercase text-sm py-2' htmlFor='text'>messagem</label>
+                <label className='uppercase text-sm py-2' htmlFor='text'>mensagem</label>
                 <textarea className='border-2 rounded-lg p-3 border-gray-300 focus:outline-none' rows={10} name='mensagem' id='text'></textarea>
               </div>
 
